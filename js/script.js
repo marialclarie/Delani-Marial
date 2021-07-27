@@ -111,3 +111,29 @@ $(document).ready(function(){
 
 
 })
+
+//Form Validation
+// Validating form
+function val(){
+    var username=document.getElementById('cname').value;
+    var email=document.getElementById('cemail').value;
+    var message=document.getElementById('cmessage').value
+    if(username==''){
+        alert('Kindly input a valid name');
+        username.focus();
+        return false;
+        
+    }else
+    if(email==''){
+        alert('Dear '+username+'\n  Kindly input a valid email address');
+        email.focus();
+        return false
+    }else
+    if(message==''){
+        alert('Dear '+username+' Please leave us a message')
+        message.focus()
+        return false;
+        
+    }else
+    alert('Hey '+username+'\n  Thank you for filling this form.')
+    }
