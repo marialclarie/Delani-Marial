@@ -1,6 +1,1 @@
-$(document).ready(function(){
-    $('.me').click(function(){
-        $('.b').toggle()
-        $('.c').toggle()
-    })
-})
+alert('hey guys')
